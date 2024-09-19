@@ -1,94 +1,168 @@
+<!DOCTYPE html>
 <html>
+    <title>Home</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Brian Ayala's portfolio webpage">
+        <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, Brian Ayala, ">
+        <meta name="author" content="Brian Ayala">
+        <link rel="stylesheet" href="MainStyles.css">
+    </head>
     <body>
-        <div class="CenterDiv">
-            <img class="valImg"src="https://gifdb.com/images/high/peach-cat-will-you-be-my-valentine-pwv0x5b3amw0t6u9.gif" alt="Bear on a heart asking wil you be my valentine">
+        <div class="header">
+            <h1>Brian Ayala</h1>
+            <div>
+                <a href="index.html"><button>Home</button></a>
+                <a href="https://www.linkedin.com/in/brian-ayala-a7a210293/"><button>Linkedin</button></a>
+                <a href="https://github.com/BrianTheDevGuy"><button>GitHub</button></a>
+            </div>
+        </div>
+        
+        <div class="mainidea">
+            <h1 class="MainNameTyping">Hello, I am Brian Ayala!</h1>
+            <p1>I am a curret California State University, Fullerton (CSUF) student.</p1><br>
+            <p1>I am a Computer Science major. Along with being a Computer Science student, I also write code as a hobby.</p1>
+            <br><br>
+            <p1>I hope you enjoy this little website I put together to show you what I am all about.</p1>
+        </div>
+        <div id="MainContent" class="mainbody">
+            <h1>Experience</h1>
+            <h2>Overview</h2>
 
-            <div class="InnerDiv">
-                <button class="yesbutton" onclick="Yay()">Yes</button>
-                <button class="nobutton" onclick="FU()">No</button>
+            <p1>Coding languages</p1>
+            <ul>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Hypertext Markup Language (HTML)</li>
+                <li>Cascading Style Sheets (CSS)</li>
+            </ul>
+            <p1>Tools</p1>
+            <ul>
+                <li>Visual Studios/Code</li>
+                <li>Microsoft Office</li>
+                <li>Unity Game Engine</li>
+                <li>Blender</li>
+                <li>Adobe</li>
+                <li>Wix (Website Building Site)</li>
+                <li>Various drawing/pixel art apps</li>
+            </ul>
+
+            <h2>Background</h2>
+            <p1>I have many years of experience with coding. I got interested in Coding back in middle school when I took a robotics class.</p1>
+            <p1>At first I only coded with block code like in </p1>
+            <p1><a href="https://code.org/">code.org</a> and <a href="https://scratch.mit.edu/">Scratch</a>.</p1>
+            <p1>
+                But During High School I upgraded to <mark>C#.</mark>
+                I started making Unity games. I've created many projects where I tested game mechanics
+                and features. trying different ways of implimenting a game mechanic, finding pros and cons to every option.
+                I also went into web development for a little. At first it was just <mark>HTML,</mark>
+                but eventually I learned <mark>CSS and JavaScript</mark> aswell.
+                <br>
+                During High School I also Used <mark>JavaScript</mark> for creating a discord bot.
+                The discord bot wasn't particularly interesting, it was more of a joke project.
+                The bot would look at your message and if it detects a keyword, it would give you a specific reply.
+                you were able to ask the bot about itself, tell the bot to say something to a specific User,
+                Give commentary on specific topics (typically of a game), and a couple other things.
+                I used the <mark>Discord.js API</mark> for the discord bot. This allowed me to send and recieve messages from discord.
+                I also used a database in order to store the amount of messages a specific user created.
+                The bot would use this information to tell us who talks the most.
+                In Terms of Unity Projects, There was a unity project I turned into a mobile game.
+                It was a wack-a-mole inspired game. Unfortunately, while the game worked fine, I was not happy with the result
+                and decided to take the game down. I added too many unnecessary mechanics that took away from the experience
+                rather than adding to it. I took this experience and started to check if a mechanic fits in the game
+                and whether it adds to the fun or takes away from it. 
+            </p1>
+            <h2>Recent Experience</h2>
+            <p1>
+                Currently I have experience in
+                <mark>C#, C++, JavaScript, Python, HTML</mark> and <mark>CSS.</mark>
+                I've created many Unity projects over the years. More details on my Unity projects can be seen below this section.
+                These projects include Chess, MineSweeper, Flappy bird, and a Platformer. Currenly I am working on a new project.
+                The Project is still in its early stage but I am planning to make a platformer game with a furry feline friend meeting a friendly human.
+                This is my next planned release for both Google play and will come with platfiormer game mechanics and a story.
+                As a student in <abbr title="California State University, Fullerton">CSUF</abbr>, I learned C++ and various coding concepts.
+                I learned how to effectively use an Object Oriented Coding Language to the best of its ability.
+                I am currently taking a Data Structures and Cybersecurity course.
+            </p1>
+
+            <br>
+            <hr>
+
+            <h1>Unity projects</h1>
+            <p1>I have made many unity projects throughout the years, all experimenting with character controllers, Game mechanics and applying coding concepts I've learned</p1>
+
+            <h2>MineSweeper</h2>
+            <p1>
+                I recreated the Game "MineSweeper" in unity. 
+                When you tap on the first tile, the mines are generated.
+                they can generate in every tile exept the tile you initially clicked on.
+                Afterwards, we check how many mines are surrounding the initial click.
+                After calculating that, it will open all tiles that contain 0 mines around itself.
+                any tiles that contain a mine around it will show the number of mines that surround that tile.
+                You are able to flag tiles. the game is complete once all tiles exept for flagged tiles are uncovered.
+                You lose if you click on a mine tile.
+            </p1>
+
+            <h2>Chess</h2>
+            <p1>
+                I recreated the Chess Board game.
+                There are a couple of different pieces that can move in various ways.
+                These include the Pawn, Bishop, Knight, Rook, King, and Queen.
+                The pawn can only move forward and capture diagnally one tile.
+                The Bishop can move to any unblocked diagnal tile
+                The Knight can Jump over pieces and follows the pattern of moving North East South or West 3 tiles and 1 tile to the right or left relative to the direction moved.
+                The Knight is not blocked by pieces that are in the way to the target tile.
+                The Rook can move to any unblocked tile Vertically or Horizontally
+                The Queen can move Vertically, Horizontally, or diagnally to any unblocked tile.
+                The king can move to any of the 8 tiles surrounding the king exept if that tile is guarded by an enemy piece.
+                If the enenmy provides a check, The king must be protected in some way during the move.
+            </p1>
+
+            <br>
+            <br>
+            <hr>
+
+            <h1>Scratch Projects</h1>
+            
+            <p1>So far, the only avalible projects of mine that we can access at the moment is Scratch Projects.</p1><br>
+            <p1>I have made many scratch projects</p1>
+
+            <h2>CookieCraft</h2>
+            <iframe src="https://scratch.mit.edu/projects/342711608/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="float: left;"></iframe>
+            <div class="discriptionbox">
+                <p1>CookieCraft is one of my Major projects on Scratch.<br></p1>
+                <p1>In this project, I made a sort of Mini RPG game. The game itself is not very long, but the code behind it was the best at the time of publishing</p1><br>
+                <p1>Unfortunately, I stopped working on it after realizing it would be too much work to make a major game like this one on such a limited "Game Engine".</p1><br><br>
+                <p1>Some of the features include scrolling through the world. Even today, many who use scratch avoid making a scrolling video game. Many resort to having a static level and teleporting you between them.</p1><br>
+                <p1>In my game, the camera follows where the player goes. Basically what I did was make every object have an x and y private variable. Using this private variable, I would just subtract their (x, y) coordinates from the Player (x, y) coordinates. This would then keep the offset as the player walks around the world.</p1>
+                <br>
+                <p1>Other than that, the game has a Sniper Rifle for a weapon. You can use it to shoot at an evil raisin cookie. You also have access to the Dead Eye ability from Read Dead Redemption.</p1>
+                <br>
+                <p1>You have two NPCs you can talk to. The first one you talk to is Dumbodoor, a cookie version of dumbledoar. The second one is a Dinosaur. This dinosaur asks you questions. You have to respond with the correct answer, but answer wrong and he eats you. After the quiz, he praises you before he dashes at you and tries to attack. You are forced into deadeye and you must shoot him.</p1><br>
+                <p1>Unfortunately, There is no ending, and Once the quiz is beaten, the dinosaur stays and is completely harmless. There is also no way to kill it. Despite that, you can now go back to dumbodoor and talk to him about the dinosaur population.</p1>
             </div>
         </div>
     </body>
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <p1>
+            Contact:
+            <br>
+            Email: <a href="mailto:brianayala2050@gmail.com">brianayala2050@gmail.com</a>
+            <br><br><br>
+            Links: 
+            <br>
+            <a href="https://www.linkedin.com/in/brian-ayala-a7a210293/">Linkedin</a>
+            <br>
+            <a href="https://github.com/BrianTheDevGuy">GitHub</a>
+        </p1>
+        <br><br><br><br><br>
+        <p1 class = "CommandLine">BrianAyala@portfolio:~$</p1>
+    </footer>
 </html>
-<style>
-    .CenterDiv {
-        padding: 5px;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        left: 50%;
-        top: 50%;
-    }
-    .InnerDiv {
-        margin: 20px;
-    }
-    .valImg {
-        width: 50%;
-        height: 50%;
-    }
-    button {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-radius: 5px;
-        border: none;
-        color: white;
-    }
-    .yesbutton {
-        transform: translate(-20px, 0%);
-        background-color: green;
-        
-    }
-    .yesbutton:hover {
-        animation: bloat 1s infinite ease-in-out;
-        animation-direction: alternate;
-    }
-    .nobutton {
-        transform: translate(20px, 0%);
-        background-color: red;
-    }
-    .nobutton:hover {
-        animation: shake 0.2s infinite;
-    }
-    @keyframes shake { 
-        0% { 
-            transform: translate(14px, 6px); 
-        } 
-  
-        25% { 
-            transform: translate(26px, -6px); 
-        } 
-  
-        50% { 
-            transform: translate(20px, 0px); 
-        } 
-  
-        75% { 
-            transform: translate(26px, 6px); 
-        } 
-  
-        100% { 
-            transform: translate(14px, -6px); 
-        }
-    }
-    @keyframes bloat { 
-        from {
-            scale: 100%;
-            transform: translate(-20px, 0%);
-        }
-        to {
-            scale: 150%;
-            transform: translate(-13.33px, 0%);
-        }
-    }
-</style>
-<script>
-    function Yay() {
-        alert("Yay pookie! see at 6 <3");
-        
-    }
-    function FU() {
-        alert("Fuck u");
-    }
-</script>

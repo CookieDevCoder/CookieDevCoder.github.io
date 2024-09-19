@@ -1,0 +1,98 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+.MainNameTyping {
+    
+    width: 24ch;
+    animation: typing 2s steps(24), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+mark {
+    color: rgb(0, 255, 0);
+    background-color: transparent;
+    font-size: 20px;
+}
+h1 {
+    color: rgb(0, 255, 0);
+}
+button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border-style: none;
+    transition: 0.5s;
+}
+div {
+    padding: 5px;
+}
+button:hover {
+    background-color: rgb(202, 202, 202);
+    color: black;
+}
+.header {
+    display: grid;
+    place-items: center;
+}
+.headerbu {
+    overflow: hidden;
+    padding: 10px 5px;
+    text-align: center;
+}
+.discriptionbox {
+    padding-left: 490px;
+}
+.mainidea {
+    margin: auto;
+    padding: 100px 0px;
+    width: 30%;
+    border-style: none;
+    text-align: center;
+}
+.mainbody {
+    margin: auto;
+    width: 90%;
+}
+h1 {
+    font-size: 40px;
+}
+
+p1 {
+    font-size: 20px;
+}
+a:link {
+    color: aqua;
+}
+a:visited {
+    color:rgb(255, 127, 255);
+}
+a:hover {
+    color: lightgreen;
+}
+.CommandLine {
+    width: 40ch;
+    border-right: 1ch solid;
+    animation: blink 0.5s step-end infinite alternate;
+}
+
+@keyframes Highlight {
+    from {background-color: green;
+    color: white;}
+    to {background-color: lightgreen;
+    color: black;}
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
